@@ -9,10 +9,10 @@ http.createServer((req, res) => {
 
 function createBot() {
     const bot = mineflayer.createBot({
-        host: 'PotatoPVP.playserver.pro', // Sunucunun IP adresi tam olarak bu
-        port: 25565,                     // Standart port kalabilir
-        username: 'AFK_Botu_724wadwadsadwad',         // Botun oyundaki ismi
-        version: '1.21.11'               // Sunucunun tam sürümü
+        host: 'potatopvp.playserver.pro', // Sunucunun IP adresi
+        port: 33911,                       // SENİN GERÇEK PORT NUMARAN!
+        username: 'iIAFK_Botu_724Ii',          // Botun oyundaki ismi
+        version: '1.21.11'                 // Sunucunun tam sürümü
     });
 
     bot.on('spawn', () => {
@@ -37,5 +37,3 @@ function createBot() {
 }
 
 createBot();
-
-
