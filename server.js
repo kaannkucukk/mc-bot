@@ -3,20 +3,20 @@ const http = require('http');
 
 // Render sitesinin botu kapatmaması için gerekli mini web sunucusu
 http.createServer((req, res) => {
-    res.write("Bot 7/24 Aktif ve Kosuyor!");
+    res.write("Bot PotatoPVP Sunucusunda 7/24 Aktif!");
     res.end();
 }).listen(process.env.PORT || 3000);
 
 function createBot() {
     const bot = mineflayer.createBot({
-        host: 'PotatoPVP.playserver.pro', // Buraya PowerupStack IP'ni yaz kral
-        port: 25565,                // Portun farklıysa değiştir
-        username: 'AFKNPC',   // Botun oyundaki ismi
-        version: '1.21.11'           // Sunucunun tam Minecraft sürümü
+        host: 'PotatoPVP.playserver.pro', // Sunucunun IP adresi tam olarak bu
+        port: 25565,                     // Standart port kalabilir
+        username: 'AFK_Botu_724wadwadsadwad',         // Botun oyundaki ismi
+        version: '1.21.11'               // Sunucunun tam sürümü
     });
 
     bot.on('spawn', () => {
-        console.log('Bot başarıyla sunucuya girdi! Durmadan koşma modu aktif.');
+        console.log('Bot BAŞARIYLA PotatoPVP sunucusuna girdi! Koşma modu aktif.');
         
         // Robotun sürekli ileri doğru koşmasını sağlar
         bot.setControlState('forward', true);
@@ -37,4 +37,5 @@ function createBot() {
 }
 
 createBot();
+
 
